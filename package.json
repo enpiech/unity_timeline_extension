@@ -1,0 +1,22 @@
+{
+  "name": "me.enpiech.timeline-extensions",
+  "displayName": "Timeline Extensions",
+  "description": "",
+  "version": "1.0.0",
+  "unity": "2021.3",
+  "author": {
+    "name": "Enpiech",
+    "email": "enpiech@gmail.com",
+    "url": "https://github.com/enpiech"
+  },
+  "dependencies": {
+    "com.unity.timeline": "1.6.4"
+  },
+  "keywords": [
+    "timeline",
+    "extensions",
+    "extension",
+    "enpiech"
+  ],
+  "hideInEditor": false
+}
