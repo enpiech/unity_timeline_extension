@@ -1,9 +1,8 @@
 {
-  "name": "TimelineExtension.Edtiro",
-  "rootNamespace": "",
+  "name": "TimelineExtensions.Runtime",
+  "rootNamespace": "Enpiech.TimelineExtensions",
   "references": [
-    "TimelineExtensions.Runtime",
-    "Unity.Timeline.Editor"
+    "Unity.Timeline"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

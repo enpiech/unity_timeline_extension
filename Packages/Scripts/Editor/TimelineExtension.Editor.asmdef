@@ -1,8 +1,9 @@
 {
-  "name": "TimelineExtensions.Runtime",
-  "rootNamespace": "",
+  "name": "TimelineExtension.Editor",
+  "rootNamespace": "Enpiech.TimelineExtensions",
   "references": [
-    "Unity.Timeline"
+    "TimelineExtensions.Runtime",
+    "Unity.Timeline.Editor"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

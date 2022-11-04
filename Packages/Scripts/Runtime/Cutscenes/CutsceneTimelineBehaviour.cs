@@ -2,17 +2,17 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Playables;
 
-namespace CricketsWorld
+namespace Enpiech.TimelineExtensions.Scripts.Runtime.Cutscenes
 {
-    public class CutsceneTimelineBehaviour : MonoBehaviour
+    public sealed class CutsceneTimelineBehaviour : MonoBehaviour
     {
-        [Header("Timeline")]
-        [SerializeField]
-        private PlayableDirector _cutsceneTimeline = default!;
-
         [Header("Marker Events")]
         [SerializeField]
         private UnityEvent _cutsceneTimelineFinished = default!;
+
+        [Header("Timeline")]
+        [SerializeField]
+        private PlayableDirector _cutsceneTimeline = default!;
 
         public void StartTimeline()
         {

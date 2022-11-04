@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Playables;
 
-namespace TimelineExtensions.Runtime.TransformTween
+namespace Enpiech.TimelineExtensions.Scripts.Runtime.TransformTween
 {
     [Serializable]
     public sealed class TransformTweenBehaviour : PlayableBehaviour
@@ -18,22 +18,7 @@ namespace TimelineExtensions.Runtime.TransformTween
         private const float RIGHT_ANGLE_IN_RADS = Mathf.PI * 0.5f;
 
         [SerializeField]
-        private Transform _startLocation = default!;
-
-        [SerializeField]
         private Transform? _endLocation;
-
-        [SerializeField]
-        private bool _tweenPosition = true;
-
-        [SerializeField]
-        private bool _tweenRotation = true;
-
-        [SerializeField]
-        private TweenType _tweenType;
-
-        [SerializeField]
-        private AnimationCurve _customCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
 
         [SerializeField]
         private Vector3 _startingPosition;
@@ -41,14 +26,29 @@ namespace TimelineExtensions.Runtime.TransformTween
         [SerializeField]
         private Quaternion _startingRotation = Quaternion.identity;
 
-        private AnimationCurve _mDecelerationCurve = new(
+        [SerializeField]
+        private Transform _startLocation = default!;
+
+        [SerializeField]
+        private TweenType _tweenType;
+
+        [SerializeField]
+        private readonly AnimationCurve _customCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
+
+        private readonly AnimationCurve _mDecelerationCurve = new(
             new Keyframe(0f, 0f, -RIGHT_ANGLE_IN_RADS, RIGHT_ANGLE_IN_RADS),
             new Keyframe(1f, 1f, 0f, 0f)
         );
 
-        private AnimationCurve _mHarmonicCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+        private readonly AnimationCurve _mHarmonicCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
-        private AnimationCurve _mLinearCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
+        private readonly AnimationCurve _mLinearCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
+
+        [SerializeField]
+        private readonly bool _tweenPosition = true;
+
+        [SerializeField]
+        private readonly bool _tweenRotation = true;
 
         public Transform StartLocation => _startLocation;
 

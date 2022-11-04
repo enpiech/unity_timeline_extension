@@ -3,19 +3,19 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
-namespace TimelineExtensions.Runtime.TransformTween
+namespace Enpiech.TimelineExtensions.Scripts.Runtime.TransformTween
 {
     [Serializable]
     public sealed class TransformTweenClip : PlayableAsset, ITimelineClipAsset
     {
         [SerializeField]
-        private TransformTweenBehaviour _template = new();
-
-        [SerializeField]
         private ExposedReference<Transform> _startLocation;
 
         [SerializeField]
         private ExposedReference<Transform> _endLocation;
+
+        [SerializeField]
+        private readonly TransformTweenBehaviour _template = new();
 
         public ClipCaps clipCaps => ClipCaps.Blending;
 
