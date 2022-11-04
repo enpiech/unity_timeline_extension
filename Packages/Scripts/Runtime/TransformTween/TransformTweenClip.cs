@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
-namespace Enpiech.TimelineExtensions.Scripts.Runtime.TransformTween
+namespace Enpiech.TimelineExtensions.Runtime.TransformTween
 {
     [Serializable]
     public sealed class TransformTweenClip : PlayableAsset, ITimelineClipAsset

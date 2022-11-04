@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Playables;
 
-namespace Enpiech.TimelineExtensions.Scripts.Runtime.Cutscenes
+namespace Enpiech.TimelineExtensions.Runtime.Cutscenes
 {
     public sealed class CutsceneTimelineBehaviour : MonoBehaviour
     {

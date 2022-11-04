@@ -1,8 +1,8 @@
-﻿using Enpiech.TimelineExtensions.Scripts.Runtime.TransformTween;
+﻿using Enpiech.TimelineExtensions.Runtime.TransformTween;
 using UnityEditor;
 using UnityEngine;
 
-namespace Enpiech.TimelineExtensions.Packages.Scripts.Editor.TransformTween
+namespace Enpiech.TimelineExtensions.Editor.TransformTween
 {
     [CustomPropertyDrawer(typeof(TransformTweenBehaviour))]
     public class TransformTweenDrawer : PropertyDrawer

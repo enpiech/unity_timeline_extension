@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
 
-namespace Enpiech.TimelineExtensions.Scripts.Runtime.TransformTween
+namespace Enpiech.TimelineExtensions.Runtime.TransformTween
 {
     public sealed class TransformTweenMixerBehaviour : PlayableBehaviour
     {
